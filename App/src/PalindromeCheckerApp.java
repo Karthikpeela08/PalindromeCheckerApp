@@ -1,6 +1,16 @@
-public class PalindromeCheckerApp {
+class PalindromeCheckerApp {
     public static void main(String[] args) {
-        System.out.println("Welcome to Palindrome Checker App");
-        System.out.println("Application Version: 1.0");
+        String str = "madam";
+        String reversed = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed = reversed + str.charAt(i);
+        }
+
+        if (str.equals(reversed)) {
+            System.out.println("The string is a palindrome");
+        } else {
+            System.out.println("The string is not a palindrome");
+        }
     }
 }
